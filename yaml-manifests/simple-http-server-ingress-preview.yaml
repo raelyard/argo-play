@@ -9,14 +9,14 @@ spec:
   rules:
     - http:
         paths:
-          - path: /simple-http-server-preview/(.*)
+          - path: /preview-http-server/(.*)
             pathType: Prefix
             backend:
               service:
                 name: simple-http-server-service-preview
                 port:
                   number: 80
-          - path: /simple-http-server-preview
+          - path: /preview-http-server
             pathType: Prefix
             backend:
               service:
